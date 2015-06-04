@@ -1,12 +1,12 @@
 # flaming-shame
 
-Turning raster images into SVG files, one pixel at a time.  Yes, really.
+Turning raster images into SVG files, one pixel at a time.  Mostly.
 
 Note that the code is, at this point (June 2015), only marginally less gross than the concept.
 
 ## What?
 
-The PHP accepts a raster image (GIF, PNG, JPEG, that sort of thing) and creates an SVG image that recreates the raster image.  It does this by drawing a filled rectangle for individual pixels in the image.
+The PHP accepts a raster image (GIF, PNG, JPEG, that sort of thing) and creates an SVG image that recreates the raster image.  It does this by drawing a filled rectangle for individual pixels in the image.  In most cases, this is literally a 1-by-1 rectangle, but thanks to [Amelia Bellamy-Royds](https://github.com/AmeliaBR/), the code now draws a single rectangle for any run of same-color pixels.
 
 ## Why?
 
