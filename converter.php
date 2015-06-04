@@ -30,8 +30,12 @@ function generateSVG($img) {
         ($col == imagecolorat($img, $x, ($y+$n))) ) {
         $n++;
       }
-			$rgb = imagecolorsforindex($img, $col);      
-			$color = "rgb($rgb[red],$rgb[green],$rgb[blue])";
+			$rgb = imagecolorsforindex($img, $col);
+		  $color = "rgb($rgb[red],$rgb[green],$rgb[blue])";
+      if ($rgb["alpha"] && ($rgb["alpha"] < 128 )) {
+        $alpha = (128 - $rgb["alpha"]) / 128;
+		    $color .= "\" fill-opacity=\"$alpha";
+      }
 			$svg .= "<rect width=\"1\" x=\"$x\" height=\"$n\" y=\"$y\" fill=\"$color\"/>\n";
 		}
 	}
