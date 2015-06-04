@@ -1,6 +1,6 @@
 # flaming-shame
 
-Turning raster images into SVG files, one pixel at a time.  Seriously.
+Turning raster images into SVG files, one pixel at a time.  Yes, really.
 
 Note that the code is, at this point (June 2015), only marginally less gross than the concept.
 
