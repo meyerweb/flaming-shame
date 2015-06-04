@@ -6,7 +6,7 @@ Note that the code is, at this point (June 2015), only marginally less gross tha
 
 ## What?
 
-The PHP accepts a raster image (GIF, PNG, JPEG, that sort of thing) and creates an SVG image that recreates the raster image.  It does this by drawing a filled rectangle for individual pixels in the image.  In most cases, this is literally a 1-by-1 rectangle, but thanks to [Amelia Bellamy-Royds](https://github.com/AmeliaBR/), the code now draws a single rectangle for any run of same-color pixels.
+The PHP accepts a raster image (GIF, PNG, JPEG, that sort of thing) and creates an SVG image that recreates the raster image.  It does this by drawing a filled rectangle for individual pixels in the image.  In most cases, this is literally a 1-by-1 rectangle, but thanks to [Amelia Bellamy-Royds](https://github.com/AmeliaBR/), the code now draws a single rectangle for any vertical run of same-color pixels.
 
 ## Why?
 
