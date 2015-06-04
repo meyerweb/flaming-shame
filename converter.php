@@ -9,6 +9,7 @@
 $img = loadImage($url);
 //var_dump( getimagesize($img));
 if (!!$img) { 
+  header('Content-type: image/svg+xml');
   generateSVG($img); 
 }
 else {
@@ -17,10 +18,10 @@ else {
 
 
 function generateSVG($img) {
-	$svg = '<svg>';
 	$w = imagesx($img); // image width
 	$h = imagesy($img); // image height
   $n = 1; //number of consecutive pixels
+	$svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 $w $h\" shape-rendering=\"crispEdges\">";
 	for ($x = 0; $x < $w; $x++) {
 		for ($y = 0; $y < $h; $y = $y+$n) {
 			$col = imagecolorat($img, $x, $y);
