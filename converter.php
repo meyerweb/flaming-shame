@@ -21,7 +21,7 @@ function generateSVG($img) {
 	$w = imagesx($img); // image width
 	$h = imagesy($img); // image height
   $n = 1; //number of consecutive pixels
-	$svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 $w $h\" shape-rendering=\"crispEdges\">";
+	$svg = "<svg xmlns=\"http://www.w3.org/2000/svg\" shape-rendering=\"crispEdges\">";
 	for ($x = 0; $x < $w; $x++) {
 		for ($y = 0; $y < $h; $y = $y+$n) {
 			$col = imagecolorat($img, $x, $y);
