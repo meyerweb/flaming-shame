@@ -6,7 +6,7 @@ Note that the code is, at this point (June 2015), only marginally less gross tha
 
 ## What?
 
-The PHP accepts a raster image (GIF, PNG, JPEG, that sort of thing) and creates an SVG image that recreates the raster image.  It does this by drawing a filled rectangle for each pixel in the image.
+The PHP accepts a raster image (GIF, PNG, JPEG, that sort of thing) and creates an SVG image that recreates the raster image.  It does this by drawing a filled rectangle for individual pixels in the image.
 
 ## Why?
 
@@ -26,11 +26,11 @@ So I decided to find out.
 
 Chris Coyier, as mentioned, and Steve Champeon, both provided inspiration.  Why Steve? Because I believe Steve did something very similar with `div`s, way back in the day.  And even if he didn’t, he inspired me in a lot of other ways and deserves credit.  I’m really sorry it came in this context, Steve.
 
-Amelia Bellamy-Royds, sometime SVG gal, added the check for runs of constant color.
+[Amelia Bellamy-Royds](https://github.com/AmeliaBR/), sometime SVG gal, added the check for runs of constant color, alpha transparency support, and made the output a valid, responsive SVG file.  Because she refused to accept that an SVG could be a less optimal image file format than a Windows .bmp bitmap file.
 
 ## When?
 
-I wrote the code in mid-May 2015, very shortly after hearing Chris’ talk at [An Event Apart](http://aneventapart.com/) Boston.  It was pushed to GitHub in early June 2015.  Further bulletins as events warrant.
+I wrote the code in mid-May 2015, very shortly after hearing Chris’ talk at [An Event Apart](http://aneventapart.com/) Boston.  It was pushed to GitHub in early June 2015, causing a minor flurry of interest.  Further bulletins as events warrant.
 
 ## Seriously, why?
 
