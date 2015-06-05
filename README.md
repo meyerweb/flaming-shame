@@ -2,7 +2,7 @@
 
 Turning raster images into SVG files, one pixel at a time.  Yes, really.
 
-This particular repository is mostly up for archiving purposes, and to serve as a warning to others.  If you actually like the idea and want to contibute, please go to https://github.com/meyerweb/px2svg, which is a semi-serious attempt to do this right.  For whatever definitoin of “right” applies in this case.
+This particular repository is mostly up for archiving purposes, and to serve as a warning to others.  If you actually like the idea and want to contribute, please go to https://github.com/meyerweb/px2svg, which is a semi-serious attempt to do this right.  For whatever definitoin of “right” applies in this case.
 
 ## What?
 
