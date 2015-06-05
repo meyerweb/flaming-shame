@@ -1,8 +1,8 @@
 # flaming-shame
 
-Turning raster images into SVG files, one pixel at a time.  Mostly.
+Turning raster images into SVG files, one pixel at a time.  Yes, really.
 
-Note that the code is, at this point (June 2015), only marginally less gross than the concept.
+This particular repository is mostly up for archiving purposes, and to serve as a warning to others.  If you actually like the idea and want to contibute, please go to https://github.com/meyerweb/px2svg, which is a semi-serious attempt to do this right.  For whatever definitoin of “right” applies in this case.
 
 ## What?
 
